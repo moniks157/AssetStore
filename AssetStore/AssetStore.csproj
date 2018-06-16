@@ -304,6 +304,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Events\NativeEvent.cs" />
+    <Compile Include="Assets\Scripts\GameScripts\Showdown.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Character.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Item.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Skill.cs" />
