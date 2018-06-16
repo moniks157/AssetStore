@@ -303,6 +303,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ScriptableObject\Character.cs" />
+    <Compile Include="Assets\ScriptableObject\Skil.cs" />
     <Compile Include="Assets\Scripts\Events\CharacterEvent.cs" />
     <Compile Include="Assets\Scripts\Events\ItemEvent.cs" />
     <Compile Include="Assets\Scripts\Events\NativeEvent.cs" />
@@ -310,8 +312,12 @@
     <Compile Include="Assets\Scripts\GameScripts\UI\ItemsUIController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\TileController.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Character.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\ScriptableObjects\Items\Item.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Skills\Skill.cs" />
+=======
+    <Compile Include="Assets\Scripts\ScriptableObjects\Skill.cs" />
+>>>>>>> Roenna3
     <Compile Include="Assets\Scripts\ScriptableObjects\TileObject.cs" />
     <Compile Include="Assets\Scripts\Utility\Tuple.cs" />
   </ItemGroup>
