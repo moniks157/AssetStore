@@ -14,13 +14,12 @@ public class Skill : TileObject {
 
     public Skill weekFor;
 
-    public new string GetDescription()
+    public override string GetDescription()
     {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.AppendLine(name);
         stringBuilder.AppendLine(Description);
-        stringBuilder.AppendLine("strong for: " + strongFor.name);
-        stringBuilder.AppendLine("week for: " + weekFor.name);
+        stringBuilder.AppendLine("Strong for: " + strongFor.Name);
+        stringBuilder.AppendLine("Week for: " + weekFor.Name);
 
         return stringBuilder.ToString();
     }

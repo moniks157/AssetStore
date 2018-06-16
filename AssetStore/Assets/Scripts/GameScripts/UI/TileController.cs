@@ -14,9 +14,10 @@ public class TileController : MonoBehaviour, IPointerClickHandler, IPointerEnter
 
     public CharacterEvent ShowCharacter;
     public ItemCharacterEvent EquipItem;
-    public TileEvent ShowDetails;
 
-    public Character currentCharacter;
+    TileDetailsController tileDetails;
+
+    public CurrentCharacter currentCharacter;
     
     private void Start()
     {
@@ -24,6 +25,9 @@ public class TileController : MonoBehaviour, IPointerClickHandler, IPointerEnter
         Image.sprite = tile.Image ?? null;
         Name = tile.Name ?? "";
         Description = tile.Description ?? "";
+
+        tileDetails = GetComponentInChildren<TileDetailsController>();
+        transform.GetChild(0).gameObject.SetActive(false);
     }
 
     //Wychwycenie podwójnego klika
@@ -31,31 +35,34 @@ public class TileController : MonoBehaviour, IPointerClickHandler, IPointerEnter
     {
         if (eventData.clickCount == 2)
         {
+            Debug.Log("Tile clicked");
             //Podmianka aktywnego bohatera
             if (tile is Character)
             {
-                currentCharacter = tile as Character;
+                Debug.Log("Character clicked");
+                currentCharacter.character = tile as Character;
                 ShowCharacter.Invoke(tile as Character);
             }
-            if (tile is Item)
-            {//JESZCZE CZY MA MIEJSCE!!!
-                EquipItem.Invoke(tile, currentCharacter);
-                    
-            }
-                                
+            if (tile is Item) {
+                Debug.Log("Item clicked");
+                
+                var item = tile as Item;
+                EquipItem.Invoke(item, currentCharacter.character); 
+            }                    
         }
-
     }
 
     //Pokazanie stałego dymku z nazwą i opisem
     public void OnPointerEnter(PointerEventData eventData)
     {
-        ShowDetails.Invoke(tile);
+        Debug.Log("PointerEnter");
+        tileDetails.ShowPanel(tile);
     }
 
     //Zniknięcie dymku
     public void OnPointerExit(PointerEventData eventData)
     {
-        ShowDetails.Invoke(tile);
+        Debug.Log("PointerExit");
+        tileDetails.ShowPanel(tile);
     }
 }
