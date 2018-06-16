@@ -61,6 +61,10 @@ MonoBehaviour:
   Image: {fileID: 0}
   Name: 
   Description: 
+  ShowCharacter: {fileID: 11400000, guid: 51fb77b3df0ee8148af02c1c1e79b5c0, type: 2}
+  EquipItem: {fileID: 11400000, guid: 369f8dcb8ab983943b09fb5bae6b221f, type: 2}
+  ShowDetails: {fileID: 11400000, guid: c32859d10f7cfec4dbb325b0eaad6436, type: 2}
+  currentCharacter: {fileID: 0}
 --- !u!114 &114721263155111118
 MonoBehaviour:
   m_ObjectHideFlags: 1

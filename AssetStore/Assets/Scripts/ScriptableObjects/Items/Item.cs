@@ -10,8 +10,7 @@ public class Item : TileObject
 
     [SerializeField]
     private List<int> modifierListPart2;
-
-
+    
     public void OnEquip(Character character)
     {
         for (int i = 0; i < modifierListPart1.Count; i++)
@@ -27,8 +26,7 @@ public class Item : TileObject
             }
         }
     }
-
-
+    
     public void OnDequip(Character character)
     {
         for (int i = 0; i < modifierListPart1.Count; i++)

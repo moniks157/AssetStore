@@ -11,5 +11,10 @@ public class Character : TileObject
 
     public int hpPoints;
 
-    public string Description;
+    public List<Item> ItemsList;
+
+    public bool HasEquiped(Item item)
+    {
+        return ItemsList.Contains(item);
+    }
 }
