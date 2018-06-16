@@ -13,14 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Image: {fileID: 21300000, guid: 6167a3e85516b6a44881bb5e91f571e0, type: 3}
   Name: Beer
-<<<<<<< HEAD
-  Description: 
-  modifierListPart1:
-  - {fileID: 11400000, guid: 682399610f1b7b14c88e65be80411b18, type: 2}
-  - {fileID: 11400000, guid: 192d593694078684eb3ff42d08743b8c, type: 2}
-  modifierListPart2: 0a0000000a000000
-=======
-  Description: When you're sad, when you're bad, get a beer, drink yourself
+  Description: Beerpong
   modifierListPart1: []
   modifierListPart2: 
->>>>>>> Milena5

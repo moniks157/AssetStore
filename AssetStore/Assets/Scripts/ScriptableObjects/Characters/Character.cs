@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using UnityEngine;
 
@@ -28,6 +29,7 @@ public class Character : TileObject
     }
 	
     public int hpPoints;
+    public int actualHpPoints;
 
     private int ItemsMaxCount;
     private List<Item> Items;
