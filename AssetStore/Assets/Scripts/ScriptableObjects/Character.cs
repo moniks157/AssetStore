@@ -6,10 +6,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Gameplay/Character")]
 public class Character : ScriptableObject
 {
-
-
-    public string characterName;
-    public List<Skil> skils;
+    public string CharacterName;
+    public List<Skill> Skils;
   //  public List<Item> items;
-    public string description;
+    public string Description;
 }
