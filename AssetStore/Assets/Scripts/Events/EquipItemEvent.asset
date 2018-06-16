@@ -9,5 +9,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed7264e3cfe33e9448249c76c6df3117, type: 3}
-  m_Name: ItemCharacterEvent
+  m_Name: EquipItemEvent
   m_EditorClassIdentifier: 
