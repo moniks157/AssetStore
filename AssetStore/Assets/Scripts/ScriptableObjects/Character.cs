@@ -7,7 +7,7 @@ using UnityEngine;
 public class Character : ScriptableObject
 {
     public string CharacterName;
-    public List<Skill> Skills;
+    public List<Skill> Skils;
   //  public List<Item> items;
     public string Description;
 }
