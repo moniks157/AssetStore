@@ -11,6 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 805e8ab778359ee4eb4fcb8fcc70d8c0, type: 3}
   m_Name: New Item
   m_EditorClassIdentifier: 
-  itemName: 
-  modifierListPart1: []
-  modifierListPart2: 
+  Image: {fileID: 0}
+  Name: 
+  Description: 
+  modifierListPart1:
+  - {fileID: 11400000, guid: dde68d42d8f88b54782d06111a966f86, type: 2}
+  - {fileID: 11400000, guid: 192d593694078684eb3ff42d08743b8c, type: 2}
+  modifierListPart2: 0a000000fbffffff

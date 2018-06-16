@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 805e8ab778359ee4eb4fcb8fcc70d8c0, type: 3}
+  m_Name: Pan
+  m_EditorClassIdentifier: 
+  Image: {fileID: 21300000, guid: 05b60952b3888d34dbcc34070b7458f1, type: 3}
+  Name: Pan
+  Description: 
+  modifierListPart1:
+  - {fileID: 11400000, guid: 10c642dd64044df40a17cceef9bfd360, type: 2}
+  - {fileID: 11400000, guid: dde68d42d8f88b54782d06111a966f86, type: 2}
+  modifierListPart2: 0f000000fbffffff
