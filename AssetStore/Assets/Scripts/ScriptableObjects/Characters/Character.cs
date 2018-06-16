@@ -10,6 +10,23 @@ public class Character : TileObject
     public List<Skill> skillsPart1;
     public List<int> skillsPart2;
 
+	public Skill PrimarySkill
+    {
+        get
+        {
+            var max = skillsPart2.Max();
+            return skillsPart1[skillsPart2.IndexOf(max)];
+        }
+    }
+
+    public int SkillValueSum
+    {
+        get
+        {
+            return skillsPart2.Sum();
+        }
+    }
+	
     public int hpPoints;
 
     private int ItemsMaxCount;
