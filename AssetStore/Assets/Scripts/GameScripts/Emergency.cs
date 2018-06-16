@@ -10,9 +10,10 @@ public class Emergency {
 
     public int money;
 
-    public Emergency(int countOfEnemies, int sumOfElementPoint)
+    public Emergency(int countOfEnemies, int sumOfElementPoint,List<Skill> skillList)
     {
         money = sumOfElementPoint * 5;
+        skillsList = skillList;
         GenerateRandomEnemies(countOfEnemies, sumOfElementPoint, 50);
     }
 
