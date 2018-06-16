@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 3970a8154196fa74daf50decf90fab41
+=======
+guid: b61c0b3d77d50aa498c789e80981197f
+>>>>>>> Michal6
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -73,7 +77,11 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: cb30087a0200d4846a167e103119d2cd
+=======
+    spriteID: c0fd068448b5e6f4eb916f30188fa1ac
+>>>>>>> Michal6
     vertices: []
     indices: 
     edges: []
