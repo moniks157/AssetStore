@@ -9,6 +9,7 @@ public class Character : TileObject
     public List<Skill> skillsPart1;
     public List<int> skillsPart2;
 
+    public int hpPoints;
 
     public string Description;
 }

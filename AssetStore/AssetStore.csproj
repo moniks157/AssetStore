@@ -306,8 +306,12 @@
     <Compile Include="Assets\Scripts\Events\CharacterEvent.cs" />
     <Compile Include="Assets\Scripts\Events\ItemEvent.cs" />
     <Compile Include="Assets\Scripts\Events\NativeEvent.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\GameScripts\UI\ItemsUIController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\TileController.cs" />
+=======
+    <Compile Include="Assets\Scripts\GameScripts\Showdown.cs" />
+>>>>>>> Michał2
     <Compile Include="Assets\Scripts\ScriptableObjects\Character.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Items\Item.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Skill.cs" />
