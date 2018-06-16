@@ -4,12 +4,8 @@ using UnityEngine;
 
 
 [CreateAssetMenu(menuName = "Gameplay/Character")]
-public class Character : ScriptableObject
+public class Character : TileObject
 {
-    public string CharacterName;
-
-    public Sprite characterImage;
-
     public List<Skill> skillsPart1;
     public List<int> skillsPart2;
 
