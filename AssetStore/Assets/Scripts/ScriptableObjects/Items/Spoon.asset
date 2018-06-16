@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Name: Spoon
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
+<<<<<<< HEAD
   Image: {fileID: 21300000, guid: 437928d5e1f079b468e93beb4239d868, type: 3}
   Name: Spoon
   Description: '......'
+=======
+  Image: {fileID: 21300000, guid: 437928d5e1f079b468e93beb4239d868, type: 3}
+  Name: Spoon
+  Description: It kills a man once
+>>>>>>> Milena5
   modifierListPart1: []
   modifierListPart2: 
 =======

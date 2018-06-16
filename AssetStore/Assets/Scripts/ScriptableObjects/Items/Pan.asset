@@ -13,8 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Image: {fileID: 21300000, guid: 05b60952b3888d34dbcc34070b7458f1, type: 3}
   Name: Pan
+<<<<<<< HEAD
   Description: 
   modifierListPart1:
   - {fileID: 11400000, guid: 10c642dd64044df40a17cceef9bfd360, type: 2}
   - {fileID: 11400000, guid: dde68d42d8f88b54782d06111a966f86, type: 2}
   modifierListPart2: 0f000000fbffffff
+=======
+  Description: Every lady of the house knows it's the best weapon
+  modifierListPart1: []
+  modifierListPart2: 
+>>>>>>> Milena5

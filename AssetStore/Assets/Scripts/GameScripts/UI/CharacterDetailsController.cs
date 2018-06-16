@@ -7,6 +7,8 @@ public class CharacterDetailsControllerr : MonoBehaviour {
 
     CharacterEvent ShowCharacter;
     
+    //Odpowiednie texty i inne rzeczy
+
     private void Awake()
     {
         ShowCharacter.AddListener(ShowPanel);
