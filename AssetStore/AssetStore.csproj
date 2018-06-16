@@ -308,6 +308,7 @@
     <Compile Include="Assets\Scripts\Events\Scripts\ItemEvent.cs" />
     <Compile Include="Assets\Scripts\Events\Scripts\NativeEvent.cs" />
     <Compile Include="Assets\Scripts\Events\Scripts\TileEvent.cs" />
+    <Compile Include="Assets\Scripts\GameScripts\Emergency.cs" />
     <Compile Include="Assets\Scripts\GameScripts\Equipment.cs" />
     <Compile Include="Assets\Scripts\GameScripts\Showdown.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\CharacterDetailsController.cs" />
