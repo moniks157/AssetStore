@@ -39,8 +39,7 @@ public class TileController : MonoBehaviour, IPointerClickHandler, IPointerEnter
             }
             if (tile is Item)
             {//JESZCZE CZY MA MIEJSCE!!!
-                var item = tile as Item;
-                EquipItem.Invoke(item, currentCharacter);
+                EquipItem.Invoke(tile as Item, currentCharacter);
                     
             }
                                 

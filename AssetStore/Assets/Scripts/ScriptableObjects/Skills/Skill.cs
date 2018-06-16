@@ -5,8 +5,7 @@ using UnityEngine;
 
 [CreateAssetMenu(menuName = "Gameplay/Skill")]
 public class Skill : TileObject {
-
-    public string SkillName;
+    
 
     public Sprite skillSprite;
     
