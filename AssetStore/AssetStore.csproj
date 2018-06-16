@@ -300,7 +300,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Events\NativeEvent.cs" />
+    <Compile Include="Assets\ScriptableObject\Character.cs" />
+    <Compile Include="Assets\ScriptableObject\Skil.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="C:\Users\millu\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />
