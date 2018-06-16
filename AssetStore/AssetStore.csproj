@@ -305,7 +305,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Events\NativeEvent.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Character.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\Item.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Skill.cs" />
+    <Compile Include="Assets\Scripts\Utility\Tuple.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="C:\Users\Michał\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />
