@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Text;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Gameplay/Item")]
@@ -11,8 +10,7 @@ public class Item : TileObject
 
     [SerializeField]
     private List<int> modifierListPart2;
-
-
+    
     public void OnEquip(Character character)
     {
         for (int i = 0; i < modifierListPart1.Count; i++)
@@ -28,34 +26,13 @@ public class Item : TileObject
             }
         }
     }
-
-
+    
     public void OnDequip(Character character)
     {
         for (int i = 0; i < modifierListPart1.Count; i++)
         {
             character.skillsPart2[character.skillsPart1.IndexOf(modifierListPart1[i])] -= modifierListPart2[i];
         }
-    }
-
-    public new string GetDescription()
-    {
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.AppendLine(name);
-        stringBuilder.AppendLine(Description);
-        for(int i =0; i< modifierListPart1.Count; i++)
-        {
-            if (modifierListPart2[i] > 0)
-            {
-                stringBuilder.AppendLine(modifierListPart1[i].name + ": +" + modifierListPart2[i]);
-            }
-            else
-            {
-                stringBuilder.AppendLine(modifierListPart1[i].name + ": " + modifierListPart2[i]);
-            }
-        }
-
-        return stringBuilder.ToString();
     }
 
 }

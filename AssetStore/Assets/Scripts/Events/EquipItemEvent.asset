@@ -8,9 +8,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 805e8ab778359ee4eb4fcb8fcc70d8c0, type: 3}
-  m_Name: New Item
+  m_Script: {fileID: 11500000, guid: ed7264e3cfe33e9448249c76c6df3117, type: 3}
+  m_Name: ItemCharacterEvent
   m_EditorClassIdentifier: 
-  itemName: 
-  modifierListPart1: []
-  modifierListPart2: 
