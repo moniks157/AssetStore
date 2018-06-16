@@ -7,7 +7,12 @@ using UnityEngine;
 public class Character : ScriptableObject
 {
     public string CharacterName;
-    public List<Skill> Skils;
-  //  public List<Item> items;
+
+    public Sprite characterImage;
+
+    public List<Skill> skillsPart1;
+    public List<int> skillsPart2;
+
+
     public string Description;
 }

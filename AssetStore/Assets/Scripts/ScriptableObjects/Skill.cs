@@ -6,6 +6,11 @@ using UnityEngine;
 public class Skill : ScriptableObject {
 
     public string SkillName;
-    public int Level;
-   
+
+    public Sprite skillSprite;
+    
+    public Skill strongFor;
+
+    public Skill weekFor;
+
 }
