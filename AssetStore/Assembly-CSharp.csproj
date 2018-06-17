@@ -71,9 +71,11 @@
     <Compile Include="Assets\Scripts\GameScripts\Emergency.cs" />
     <Compile Include="Assets\Scripts\GameScripts\EmergencyController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\Equipment.cs" />
+    <Compile Include="Assets\Scripts\GameScripts\LoadDataController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\Showdown.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\CharacterDetailsController.cs" />
+    <Compile Include="Assets\Scripts\GameScripts\UI\CharacterItemsController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\EmergencyUIController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\ErrorController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\StoreController.cs" />
@@ -89,10 +91,10 @@
     <Compile Include="Assets\Scripts\Utility\Tuple.cs" />
     <None Include="Assets\Files\imiona.txt" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>E:/gitKraken/AssetStore/AssetStore/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>E:/AssetStore/AssetStore/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/gitKraken/AssetStore/AssetStore/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/AssetStore/AssetStore/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

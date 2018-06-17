@@ -17,8 +17,8 @@ public class StoreTailController : MonoBehaviour, IPointerClickHandler
     public Image Image;
     public string Name;
     public string Description;//zmina na text?
-
-    /*  private void Start()
+    /*
+     private void Start()
       {
           Image = GetComponent<Image>();
           Image.sprite = tile.Image ?? null;
@@ -26,8 +26,8 @@ public class StoreTailController : MonoBehaviour, IPointerClickHandler
           Description = tile.Description ?? "";
 
 
-      }
-      */
+      }*/
+     
     public void init(TileObject tile2)
     {
         Image = GetComponent<Image>();
