@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db8c9dbcfa9c664783e9fce8997dd11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tile: {fileID: 11400000, guid: d6b085d79e6a81943908c6d164058705, type: 2}
+  tile: {fileID: 11400000, guid: 549813c65939a87459d5141fad4ba960, type: 2}
   Image: {fileID: 0}
   Name: 
   Description: 
