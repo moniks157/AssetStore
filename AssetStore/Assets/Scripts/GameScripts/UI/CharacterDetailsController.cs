@@ -10,6 +10,7 @@ public class CharacterDetailsController : MonoBehaviour {
     public Image tile;
     public Text NameText;
     public Text DescText;
+    public GameObject tileImage;
 
     private void OnEnable()
     {
@@ -28,5 +29,6 @@ public class CharacterDetailsController : MonoBehaviour {
         tile.sprite = character.Image;
         NameText.text = character.Name;
         DescText.text = character.GetDescription();
+        tileImage.SetActive(true);
     }
 }

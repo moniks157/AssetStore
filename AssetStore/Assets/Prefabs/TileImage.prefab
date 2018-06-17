@@ -198,13 +198,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db8c9dbcfa9c664783e9fce8997dd11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tile: {fileID: 11400000, guid: d6b085d79e6a81943908c6d164058705, type: 2}
+  tile: {fileID: 0}
   Image: {fileID: 0}
   Name: 
   Description: 
-  ShowCharacter: {fileID: 11400000, guid: 51fb77b3df0ee8148af02c1c1e79b5c0, type: 2}
+  ShowCharacter: {fileID: 11400000, guid: ef9ad5f95db0eab4bb738dac8a77f543, type: 2}
   EquipItem: {fileID: 11400000, guid: 369f8dcb8ab983943b09fb5bae6b221f, type: 2}
   currentCharacter: {fileID: 11400000, guid: c2f8441cb374023428ba2553468c9039, type: 2}
+  NoneImage: {fileID: 21300000, guid: a6526792919b1454e9067f1b7547b680, type: 3}
 --- !u!114 &114946903481464176
 MonoBehaviour:
   m_ObjectHideFlags: 1
