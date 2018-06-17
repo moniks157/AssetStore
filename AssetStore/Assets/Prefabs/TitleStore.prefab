@@ -119,8 +119,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a068f942351cb344684163fda067fa2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showTile: {fileID: 11400000, guid: 11bb93226668dd540885a53b81a071c9, type: 2}
   ObjectName: {fileID: 114970288570267424}
   Price: {fileID: 114321334090216820}
+  Image: {fileID: 114189987766208518}
+  Description: 
 --- !u!114 &114189987766208518
 MonoBehaviour:
   m_ObjectHideFlags: 1

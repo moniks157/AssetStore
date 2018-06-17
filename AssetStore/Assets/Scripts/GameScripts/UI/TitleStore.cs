@@ -1,33 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class TitleStore : MonoBehaviour {
+public class TitleStore : MonoBehaviour, IPointerClickHandler {
+
+    public TitleStoreEvent showTile;
+
+    public TileObject tile;
 
 	public Text ObjectName;
     public Text Price;
+    public Image Image;
+    public string Description;
 
-    public int PRICE_INDEX = 5;
-   public void init(TileObject tile,bool isItem)
+   
+    public void OnPointerClick(PointerEventData eventData)
     {
-        ObjectName.text = tile.Name ?? "";
-
-        gameObject.transform.GetComponentInChildren<StoreTailController>().init(tile);
-        if (isItem)
-        {
-            Price.text = (tile as Item).ItemValueSum* PRICE_INDEX+"@";
-
-        }
-        else
-        {
-           
-            Price.text =( tile as Character).SkillValueSum * PRICE_INDEX + "@";
-        }
-
-
-
+        showTile.Invoke(this);
     }
-
-
 }

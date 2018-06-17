@@ -13,7 +13,8 @@ public class DataContainer : MonoBehaviour {
     public List<Item> notEquipedItems;
     public List<Character> deadHeroes;
 
-     
+    public int Coins;
+    
     public TextAsset nameFile;
     public int money;
     

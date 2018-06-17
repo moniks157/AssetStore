@@ -9,7 +9,7 @@ public class LoadDataController : MonoBehaviour {
 
     public GameObject tilePrefab;
     DataContainer data;
-
+    
     private void Start()
     {
         data = FindObjectOfType<DataContainer>();
@@ -18,7 +18,7 @@ public class LoadDataController : MonoBehaviour {
         Debug.Log("Items");
         LoadItems();
     }
-
+    
     public void LoadHeros()
     {
         RemoveHeros();
@@ -89,11 +89,20 @@ public class LoadDataController : MonoBehaviour {
         LoadItems();
     }
 
+    public void BuySomething(TileObject tile)
+    {
+        if (tile is Item)
+            BuyItem(tile as Item);
+        if (tile is Character)
+            BuyCharacter(tile as Character);
+    }
+
     public void BuyItem(Item item)
     {
         data.boughtItems.Add(item);
         data.notEquipedItems.Add(item);
         data.notBoughtItems.Remove(item);
+        data.Coins -= item.ItemValueSum;
         LoadItems();
     }
 
@@ -101,6 +110,7 @@ public class LoadDataController : MonoBehaviour {
     {
         data.boughtCharacters.Add(character);
         data.notBoughtCharacters.Remove(character);
+        data.Coins -= character.SkillValueSum;
         LoadHeros();
     }
 
