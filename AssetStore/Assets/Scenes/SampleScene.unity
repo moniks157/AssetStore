@@ -2429,14 +2429,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 50
-    m_Right: 0
+    m_Right: 50
     m_Top: 50
     m_Bottom: 0
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 30, y: 30}
-  m_Spacing: {x: 85, y: 70}
+  m_Spacing: {x: 70, y: 70}
   m_Constraint: 1
   m_ConstraintCount: 4
 --- !u!224 &1457181022 stripped
