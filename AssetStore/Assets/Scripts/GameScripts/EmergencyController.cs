@@ -52,5 +52,6 @@ public class EmergencyController : MonoBehaviour {
     private void ChangeState()
     {
         isActivEmergency = false;
+        lastTimeEmergency = Time.timeSinceLevelLoad;
     }
 }

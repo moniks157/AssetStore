@@ -61,7 +61,17 @@ public class Emergency {
 
     private string GetRandomName()
     {
-        return names[Random.Range(0, names.Length - 1)] + " " + names[Random.Range(0, names.Length - 1)];
+        int name_1 = Random.Range(6, names.Length / 2 - 6) * 2;
+        while(names[name_1] == "")
+        {
+            name_1 = Random.Range(6, names.Length / 2 - 6) * 2;
+        }
+        int name_2 = Random.Range(6, names.Length / 2 - 6) * 2;
+        while (names[name_2] == "")
+        {
+            name_2 = Random.Range(6, names.Length / 2 - 6) * 2;
+        }
+        return names[name_1] + " " + names[name_2];
     }
 
 
@@ -72,9 +82,16 @@ public class Emergency {
         var result = new List<int>();
         for(int i =0 ; i<count; i++)
         {
-            var rand = Random.Range(0, actualSumPoints);
-            result.Add(rand);
-            actualSumPoints -= rand;
+            if (i != count -1)
+            {
+                var rand = Random.Range(0, actualSumPoints);
+                result.Add(rand);
+                actualSumPoints -= rand;
+            }
+            else
+            {
+                result.Add(actualSumPoints);
+            }
         }
 
         return result;

@@ -18,12 +18,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 10c642dd64044df40a17cceef9bfd360, type: 2}
   - {fileID: 11400000, guid: 192d593694078684eb3ff42d08743b8c, type: 2}
   - {fileID: 11400000, guid: 682399610f1b7b14c88e65be80411b18, type: 2}
-  skillsPart2: 07000000faffffff04000000
-  hpPoints: 20
-  actualHpPoints: 20
+  - {fileID: 11400000, guid: 345fefbe13b79124e90aad71207d2e4f, type: 2}
+  - {fileID: 11400000, guid: dde68d42d8f88b54782d06111a966f86, type: 2}
+  skillsPart2: 0e00000012000000060000000a00000002000000
+  hpPoints: 45
+  actualHpPoints: 45
   ItemsMaxCount: 4
   Items:
-  - {fileID: 11400000, guid: 1ae2cc8dfe8732b4cb242eb15f6dab52, type: 2}
-  - {fileID: 11400000, guid: 550a826421b3267418cdd463ec968729, type: 2}
-  - {fileID: 11400000, guid: b4a0ce7fd9d5123478f2c0c3621aaf9b, type: 2}
-  - {fileID: 11400000, guid: b87a2046ea7b692478abcd7e323239fe, type: 2}
+  - {fileID: 11400000, guid: 07a1909badbdb9945a13f614f8184c57, type: 2}
+  - {fileID: 11400000, guid: 6611e11700af7fb4493c48a69643c5aa, type: 2}
