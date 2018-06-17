@@ -12,6 +12,6 @@ public class DDOL : MonoBehaviour {
         if(!isInstantiated)
             DontDestroyOnLoad(gameObject);
 
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 }
