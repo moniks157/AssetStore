@@ -152,11 +152,12 @@ MonoBehaviour:
   notBoughtItems:
   - {fileID: 11400000, guid: 07a1909badbdb9945a13f614f8184c57, type: 2}
   - {fileID: 11400000, guid: b4a0ce7fd9d5123478f2c0c3621aaf9b, type: 2}
-  - {fileID: 11400000, guid: abab05f75f434ad43897a4d2a7452943, type: 2}
+  - {fileID: 0}
   - {fileID: 11400000, guid: 7ad7744f00472e1458ff8cb28a50bc48, type: 2}
   - {fileID: 11400000, guid: c93b9fd477d745843b838fd6eb529cf6, type: 2}
   - {fileID: 11400000, guid: b1f7287096fec704291c15efd16e0cd2, type: 2}
   boughtItems: []
+  nameFile: {fileID: 4900000, guid: bc16d2c3f37ee254eb4d7730fc292c1d, type: 3}
 --- !u!114 &1745971999
 MonoBehaviour:
   m_ObjectHideFlags: 0

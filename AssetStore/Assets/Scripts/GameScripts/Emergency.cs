@@ -12,8 +12,16 @@ public class Emergency {
 
     public int money;
 
+    private static string[] names;
+
+    static Emergency()
+    {
+        names = GameObject.FindObjectOfType<DataContainer>().nameFile.text.Split(null);
+    }
+
     public Emergency(int countOfEnemies, int sumOfElementPoint,List<Skill> skillList)
     {
+        
         skills = new List<Skill>(skillList);
         enemies = new List<Character>();
         money = sumOfElementPoint * 5;
@@ -43,13 +51,19 @@ public class Emergency {
         var enemy = new Character()
         {
             actualHpPoints = hpPoints,
-            Name = "placeHolder",
+            Name = GetRandomName(),
             skillsPart1 = skilL1,
             skillsPart2 = skilL2
         };
 
         return enemy;
     }
+
+    private string GetRandomName()
+    {
+        return names[Random.Range(0, names.Length - 1)] + " " + names[Random.Range(0, names.Length - 1)];
+    }
+
 
     private List<int> GetRandomIntList(int count,int sumPoints)
     {
