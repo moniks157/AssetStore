@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Gameplay/Item")]
@@ -27,6 +28,13 @@ public class Item : TileObject
                 character.skillsPart1.Add(modifierListPart1[i]);
                 character.skillsPart2.Add(modifierListPart2[i]);
             }
+        }
+    }
+    public int ItemValueSum
+    {
+        get
+        {
+            return modifierListPart2.Sum();
         }
     }
 

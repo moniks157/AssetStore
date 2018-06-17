@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Pan
   m_EditorClassIdentifier: 
   Image: {fileID: 21300000, guid: 05b60952b3888d34dbcc34070b7458f1, type: 3}
-  Name: 
-  Description: 
+  Name: Pan
+  Description: '...'
   modifierListPart1: []
   modifierListPart2: 

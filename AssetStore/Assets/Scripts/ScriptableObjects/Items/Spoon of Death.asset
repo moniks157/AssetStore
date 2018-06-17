@@ -13,6 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Image: {fileID: 21300000, guid: 0b5b3b0500d0ca04c8627873ccf14674, type: 3}
   Name: Spoon of death
-  Description: 
+  Description: ..
   modifierListPart1: []
-  modifierListPart2: 
+  modifierListPart2: 0200000005000000
