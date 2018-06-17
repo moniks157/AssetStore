@@ -176,11 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db8c9dbcfa9c664783e9fce8997dd11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  tile: {fileID: 11400000, guid: 549813c65939a87459d5141fad4ba960, type: 2}
-=======
-  tile: {fileID: 11400000, guid: dbcf9cf629932ea42a0515860208d0c8, type: 2}
->>>>>>> Roenna8
+  tile: {fileID: 11400000, guid: 7ad7744f00472e1458ff8cb28a50bc48, type: 2}
   Image: {fileID: 0}
   Name: 
   Description: 
@@ -397,7 +393,7 @@ RectTransform:
   m_GameObject: {fileID: 1757035227474682}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.9999902, y: 2.9999902, z: 2.9999902}
+  m_LocalScale: {x: 2.9999995, y: 2.9999995, z: 2.9999995}
   m_Children:
   - {fileID: 224764924268155186}
   m_Father: {fileID: 0}
