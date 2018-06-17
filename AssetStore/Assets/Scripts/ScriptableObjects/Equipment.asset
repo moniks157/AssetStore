@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14021d4db7533dd47aa43ca30bec44a8, type: 3}
   m_Name: Equipment
   m_EditorClassIdentifier: 
-  EquipEvent: {fileID: 0}
-  ShowError: {fileID: 0}
+  EquipEvent: {fileID: 11400000, guid: 369f8dcb8ab983943b09fb5bae6b221f, type: 2}
+  ShowError: {fileID: 11400000, guid: 93cbfbc9dd10d474a9c9361c42aa34f1, type: 2}

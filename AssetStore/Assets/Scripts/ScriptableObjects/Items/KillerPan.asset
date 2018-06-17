@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: KillerPan
   m_EditorClassIdentifier: 
   Image: {fileID: 21300000, guid: 17056e748fd318345a8b6ef6b85fabd9, type: 3}
-  Name: 
-  Description: 
+  Name: Killer Pan
+  Description: The best choice to cook dinner for your mother in low
   modifierListPart1: []
   modifierListPart2: 

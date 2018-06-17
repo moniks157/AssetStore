@@ -183,7 +183,7 @@ MonoBehaviour:
   ShowCharacter: {fileID: 11400000, guid: ef9ad5f95db0eab4bb738dac8a77f543, type: 2}
   EquipItem: {fileID: 11400000, guid: 369f8dcb8ab983943b09fb5bae6b221f, type: 2}
   currentCharacter: {fileID: 11400000, guid: c2f8441cb374023428ba2553468c9039, type: 2}
-  NoneImage: {fileID: 21300000, guid: 18ab0f5b60c526043853420c6f047211, type: 3}
+  NoneImage: {fileID: 21300000, guid: a6526792919b1454e9067f1b7547b680, type: 3}
 --- !u!114 &114549111390211512
 MonoBehaviour:
   m_ObjectHideFlags: 1
