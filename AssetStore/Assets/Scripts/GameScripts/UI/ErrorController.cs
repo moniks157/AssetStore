@@ -5,12 +5,13 @@ using UnityEngine.UI;
 
 public class ErrorController : MonoBehaviour {
 
-    StringEvent ShowError;
+    public StringEvent ShowError;
     public Text ErrorText;
 
     private void OnEnable()
     {
         ShowError.AddListener(ShowPanel);
+        gameObject.SetActive(false);
     }
 
     private void OnDisable()

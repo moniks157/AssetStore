@@ -9,6 +9,8 @@ public class DataContainer : MonoBehaviour {
     public List<Character> boughtCharacters;
     public List<Item> notBoughtItems;
     public List<Item> boughtItems;
+    public List<Item> equipedItems;
+    public List<Item> notEquipedItems;
 
     public TextAsset nameFile;
     

@@ -14,5 +14,7 @@ MonoBehaviour:
   Image: {fileID: 21300000, guid: 2dbb17e00c3786b49b4d8e1964cb3672, type: 3}
   Name: Beer
   Description: When you're bad, when you're sad, get a beer, drink yourself
-  modifierListPart1: []
-  modifierListPart2: 
+  modifierListPart1:
+  - {fileID: 11400000, guid: 192d593694078684eb3ff42d08743b8c, type: 2}
+  - {fileID: 11400000, guid: 682399610f1b7b14c88e65be80411b18, type: 2}
+  modifierListPart2: 05000000feffffff

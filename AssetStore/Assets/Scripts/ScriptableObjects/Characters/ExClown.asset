@@ -9,11 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 757b3ece829881a45ba1728051148b51, type: 3}
-  m_Name: AcidMate
+  m_Name: ExClown
   m_EditorClassIdentifier: 
-  Image: {fileID: 21300000, guid: b62969c64cc97694e84b9cdd95f08c85, type: 3}
-  Name: Acid Mate
-  Description: Never knows what to cook on diner
+  Image: {fileID: 21300000, guid: 291dfd9db254a5249833d57c99d47f60, type: 3}
+  Name: ExClown
+  Description: Beware of.. Granny the Great!
   skillsPart1: []
   skillsPart2: 
   hpPoints: 20

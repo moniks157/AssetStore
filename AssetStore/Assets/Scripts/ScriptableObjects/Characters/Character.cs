@@ -27,11 +27,12 @@ public class Character : TileObject
             return skillsPart2.Sum();
         }
     }
-	
-    public int hpPoints;
+
+    public int hpPoints = 20;
     public int actualHpPoints;
 
-    private int ItemsMaxCount;
+    public int ItemsMaxCount = 4;
+
     public List<Item> Items;
 
     public bool HasEquiped(Item item)
@@ -44,6 +45,16 @@ public class Character : TileObject
         return !(Items.Count == ItemsMaxCount);
     }
 
+    public void RemoveItem(Item item)
+    {
+        Items.Remove(item);
+    }
+
+    public void AddItem(Item item)
+    {
+        Items.Add(item);
+    }
+
     public override string GetDescription()
     {
         StringBuilder stringBuilder = new StringBuilder();
@@ -54,7 +65,7 @@ public class Character : TileObject
             {
                 stringBuilder.AppendLine(skillsPart1[i].Name + ": +" + skillsPart2[i]);
             }
-            else
+            else if (skillsPart2[i] < 0)
             {
                 stringBuilder.AppendLine(skillsPart1[i].Name + ": " + skillsPart2[i]);
             }
