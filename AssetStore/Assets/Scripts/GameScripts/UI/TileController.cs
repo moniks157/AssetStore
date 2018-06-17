@@ -18,16 +18,16 @@ public class TileController : MonoBehaviour, IPointerClickHandler, IPointerEnter
     TileDetailsController tileDetails;
 
     public CurrentCharacter currentCharacter;
+
+    public Sprite NoneImage;
     
     private void Start()
     {
-        Image = GetComponent<Image>();
-        Image.sprite = tile.Image ?? null;
-        Name = tile.Name ?? "";
-        Description = tile.Description ?? "";
-
+        
         tileDetails = GetComponentInChildren<TileDetailsController>();
         transform.GetChild(0).gameObject.SetActive(false);
+
+        SetData();
     }
 
     //Wychwycenie podwójnego klika
@@ -55,14 +55,34 @@ public class TileController : MonoBehaviour, IPointerClickHandler, IPointerEnter
     //Pokazanie stałego dymku z nazwą i opisem
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("PointerEnter");
-        tileDetails.ShowPanel(tile);
+        if (tile != null)
+        {
+            Debug.Log("PointerEnter");
+            tileDetails.ShowPanel(tile);
+        }
     }
 
     //Zniknięcie dymku
     public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log("PointerExit");
-        tileDetails.ShowPanel(tile);
+        if (tile != null)
+        {
+            Debug.Log("PointerExit");
+            tileDetails.ShowPanel(tile);
+        }
+    }
+
+    public void SetData()
+    {
+        Image = GetComponent<Image>();
+        Image.sprite = tile.Image ?? NoneImage;
+        Name = tile.Name ?? "";
+        Description = tile.Description ?? "";
+    }
+
+    public void ClearData()
+    {
+        tile = null;
+        Image.sprite = NoneImage;
     }
 }

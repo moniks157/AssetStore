@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
+[CreateAssetMenu(fileName ="Gameplay/Equipment")]
 public class Equipment : ScriptableObject
 {
-    ItemCharacterEvent EquipEvent;
-    StringEvent ShowError;
+    public ItemCharacterEvent EquipEvent;
+    public StringEvent ShowError;
+
+    //DataContainer - jak wyposaza to wywala z listy ekwipunkow ogolnej
 
     private void Awake()
     {
