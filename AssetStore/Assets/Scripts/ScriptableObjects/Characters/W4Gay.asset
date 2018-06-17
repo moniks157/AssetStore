@@ -17,8 +17,15 @@ MonoBehaviour:
   skillsPart1:
   - {fileID: 11400000, guid: dde68d42d8f88b54782d06111a966f86, type: 2}
   - {fileID: 11400000, guid: 345fefbe13b79124e90aad71207d2e4f, type: 2}
-  skillsPart2: 0400000005000000
-  hpPoints: 10
-  actualHpPoints: 10
+  - {fileID: 11400000, guid: 192d593694078684eb3ff42d08743b8c, type: 2}
+  - {fileID: 11400000, guid: 682399610f1b7b14c88e65be80411b18, type: 2}
+  - {fileID: 11400000, guid: 10c642dd64044df40a17cceef9bfd360, type: 2}
+  skillsPart2: 06000000090000000c000000fbffffff04000000
+  hpPoints: 20
+  actualHpPoints: 20
+  ItemsMaxCount: 4
   Items:
   - {fileID: 11400000, guid: 7ad7744f00472e1458ff8cb28a50bc48, type: 2}
+  - {fileID: 11400000, guid: 07a1909badbdb9945a13f614f8184c57, type: 2}
+  - {fileID: 11400000, guid: 483783de2da547047977be3e85b73efd, type: 2}
+  - {fileID: 11400000, guid: b1f7287096fec704291c15efd16e0cd2, type: 2}

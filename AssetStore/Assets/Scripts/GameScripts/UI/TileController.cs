@@ -47,9 +47,12 @@ public class TileController : MonoBehaviour, IPointerClickHandler, IPointerEnter
                 Debug.Log("Item clicked");
                 
                 var item = tile as Item;
-                EquipItem.Invoke(item, currentCharacter.character); 
-            }                    
+                EquipItem.Invoke(item, currentCharacter.character);
+
+                tileDetails.ShowPanel(false);
+            }
         }
+       
     }
 
     //Pokazanie stałego dymku z nazwą i opisem

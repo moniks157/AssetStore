@@ -14,5 +14,7 @@ MonoBehaviour:
   Image: {fileID: 21300000, guid: 05b60952b3888d34dbcc34070b7458f1, type: 3}
   Name: Pan
   Description: Every lady of a house knows that's the best weapon
-  modifierListPart1: []
-  modifierListPart2: 
+  modifierListPart1:
+  - {fileID: 11400000, guid: 10c642dd64044df40a17cceef9bfd360, type: 2}
+  - {fileID: 11400000, guid: 192d593694078684eb3ff42d08743b8c, type: 2}
+  modifierListPart2: 05000000feffffff

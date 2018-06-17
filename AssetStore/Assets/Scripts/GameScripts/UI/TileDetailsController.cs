@@ -19,4 +19,9 @@ public class TileDetailsController : MonoBehaviour {
         NameText.text = NamePrefix + tile.Name;
         DescText.text = DescPrefix + tile.GetDescription();
     }
+
+    public void ShowPanel(bool active)
+    {
+        gameObject.SetActive(active);
+    }
 }

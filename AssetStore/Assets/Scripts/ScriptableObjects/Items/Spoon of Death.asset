@@ -14,5 +14,7 @@ MonoBehaviour:
   Image: {fileID: 21300000, guid: 0b5b3b0500d0ca04c8627873ccf14674, type: 3}
   Name: Spoon of death
   Description: Instead of food it gives you pain and misery
-  modifierListPart1: []
-  modifierListPart2: 
+  modifierListPart1:
+  - {fileID: 11400000, guid: 10c642dd64044df40a17cceef9bfd360, type: 2}
+  - {fileID: 11400000, guid: 345fefbe13b79124e90aad71207d2e4f, type: 2}
+  modifierListPart2: 0400000002000000

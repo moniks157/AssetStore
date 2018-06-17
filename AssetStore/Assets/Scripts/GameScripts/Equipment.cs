@@ -5,12 +5,18 @@ using System.Text;
 using UnityEngine;
 
 [CreateAssetMenu(fileName ="Gameplay/Equipment")]
-public class Equipment : ScriptableObject
+public class Equipment : MonoBehaviour
 {
+    public CharacterEvent ShowCharacter;
     public ItemCharacterEvent EquipEvent;
     public StringEvent ShowError;
 
-    //DataContainer - jak wyposaza to wywala z listy ekwipunkow ogolnej
+    LoadDataController data;
+
+    private void Start()
+    {
+        data = FindObjectOfType<LoadDataController>();
+    }
 
     private void Awake()
     {
@@ -24,21 +30,32 @@ public class Equipment : ScriptableObject
 
     private void EquipItem(Item item, Character character)
     {
-        if (character.HasPlace())
+        Debug.Log("EQUIP!");
+        if (!character.HasEquiped(item))
         {
-            if (!character.HasEquiped(item))
+            Debug.Log("Nie ma itemu");
+            if (character.HasPlace())
             {
+                Debug.Log("Ma miejsce - wyposażam");
                 item.OnEquip(character);
+                character.AddItem(item);
+                data.EquipItem(item);
             }
             else
             {
-                item.OnDequip(character);
+                ShowErrorPanel("Brak miejsca!");
             }
+            
         }
         else
         {
-            ShowErrorPanel("Brak miejsca!");
+            Debug.Log("Ma - odposażam");
+            item.OnDequip(character);
+            character.RemoveItem(item);
+            data.DequipItem(item);
         }
+        ShowCharacter.Invoke(character);
+        
     }
 
     public void ShowErrorPanel(String message)
