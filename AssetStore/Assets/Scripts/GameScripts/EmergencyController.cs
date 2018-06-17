@@ -27,7 +27,7 @@ public class EmergencyController : MonoBehaviour {
             if(Random.Range(0,100) < afterMinimalProbability)
             {
                 lastTimeEmergency = Time.timeSinceLevelLoad;
-                Emergency emergency = new Emergency(Random.Range(1, 3), 30,allSkillsList);
+                Emergency emergency = new Emergency(Random.Range(1, 3), 30,new List<Skill>(allSkillsList));
                 emergencyEvent.Invoke(emergency);
             }
         }

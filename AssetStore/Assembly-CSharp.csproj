@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\GameScripts\Equipment.cs" />
     <Compile Include="Assets\Scripts\GameScripts\Showdown.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\CharacterDetailsController.cs" />
+    <Compile Include="Assets\Scripts\GameScripts\UI\EmergencyUIController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\ErrorController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\TileController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\TileDetailsController.cs" />
