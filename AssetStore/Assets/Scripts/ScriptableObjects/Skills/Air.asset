@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b6868eb8c6b3004096860120684b36f, type: 3}
   m_Name: Air
   m_EditorClassIdentifier: 
-  Image: {fileID: 21300000, guid: 49649bc077c602743909d84a568ab6a1, type: 3}
+  Image: {fileID: 21300000, guid: d78361da3e5ffef4db6c9e05980b3bf6, type: 3}
   Name: Air
   Description: 
-  skillSprite: {fileID: 21300000, guid: 49649bc077c602743909d84a568ab6a1, type: 3}
+  skillSprite: {fileID: 21300000, guid: d78361da3e5ffef4db6c9e05980b3bf6, type: 3}
   strongFor: {fileID: 11400000, guid: 345fefbe13b79124e90aad71207d2e4f, type: 2}
   weekFor: {fileID: 11400000, guid: 682399610f1b7b14c88e65be80411b18, type: 2}
