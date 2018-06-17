@@ -310,9 +310,12 @@
     <Compile Include="Assets\Scripts\Events\Scripts\NativeEvent.cs" />
     <Compile Include="Assets\Scripts\Events\Scripts\StringEvent.cs" />
     <Compile Include="Assets\Scripts\Events\Scripts\TileEvent.cs" />
+    <Compile Include="Assets\Scripts\GameScripts\DataContainer.cs" />
+    <Compile Include="Assets\Scripts\GameScripts\DDOL.cs" />
     <Compile Include="Assets\Scripts\GameScripts\Emergency.cs" />
     <Compile Include="Assets\Scripts\GameScripts\EmergencyController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\Equipment.cs" />
+    <Compile Include="Assets\Scripts\GameScripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\Showdown.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\CharacterDetailsController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\ErrorController.cs" />
@@ -327,7 +330,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Files\imiona.txt" />
-<<<<<<< HEAD
     <None Include="C:\Users\Michał\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />
     <None Include="C:\Users\Michał\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Light.uss" />
     <None Include="C:\Users\Michał\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\Alert.uxml" />
@@ -337,17 +339,6 @@
     <None Include="C:\Users\Michał\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageList.uxml" />
     <None Include="C:\Users\Michał\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageManagerWindow.uxml" />
     <None Include="C:\Users\Michał\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageSearchFilterTabs.uxml" />
-=======
-    <None Include="C:\Users\millu\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />
-    <None Include="C:\Users\millu\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Light.uss" />
-    <None Include="C:\Users\millu\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\Alert.uxml" />
-    <None Include="C:\Users\millu\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageDetails.uxml" />
-    <None Include="C:\Users\millu\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageGroup.uxml" />
-    <None Include="C:\Users\millu\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageItem.uxml" />
-    <None Include="C:\Users\millu\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageList.uxml" />
-    <None Include="C:\Users\millu\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageManagerWindow.uxml" />
-    <None Include="C:\Users\millu\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageSearchFilterTabs.uxml" />
->>>>>>> Roenna6
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
