@@ -303,11 +303,13 @@
     <Compile Include="Assets\AS_ModernMenu1\README.cs" />
     <Compile Include="Assets\Scripts\Events\Scripts\CharacterEvent.cs" />
     <Compile Include="Assets\Scripts\Events\Scripts\EmergencyEvent.cs" />
+    <Compile Include="Assets\Scripts\Events\Scripts\IntEvent.cs" />
     <Compile Include="Assets\Scripts\Events\Scripts\ItemCharacterEvent.cs" />
     <Compile Include="Assets\Scripts\Events\Scripts\ItemEvent.cs" />
     <Compile Include="Assets\Scripts\Events\Scripts\NativeEvent.cs" />
     <Compile Include="Assets\Scripts\Events\Scripts\StringEvent.cs" />
     <Compile Include="Assets\Scripts\Events\Scripts\TileEvent.cs" />
+    <Compile Include="Assets\Scripts\Events\Scripts\TitleStoreEvent.cs" />
     <Compile Include="Assets\Scripts\GameScripts\DataContainer.cs" />
     <Compile Include="Assets\Scripts\GameScripts\DDOL.cs" />
     <Compile Include="Assets\Scripts\GameScripts\Emergency.cs" />
@@ -321,9 +323,9 @@
     <Compile Include="Assets\Scripts\GameScripts\UI\EmergencyUIController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\ErrorController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\StoreController.cs" />
-    <Compile Include="Assets\Scripts\GameScripts\UI\StoreTailController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\TileController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\TileDetailsController.cs" />
+    <Compile Include="Assets\Scripts\GameScripts\UI\TileStoreDetailController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\TitleStore.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Characters\Character.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\CurrentCharacter.cs" />

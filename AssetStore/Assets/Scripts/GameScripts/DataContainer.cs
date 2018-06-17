@@ -12,7 +12,8 @@ public class DataContainer : MonoBehaviour {
     public List<Item> equipedItems;
     public List<Item> notEquipedItems;
 
-     
+    public int Coins;
+    
     public TextAsset nameFile;
     
 }

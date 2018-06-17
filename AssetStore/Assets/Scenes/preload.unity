@@ -155,7 +155,13 @@ MonoBehaviour:
   boughtCharacters:
   - {fileID: 11400000, guid: a158a908b3d007b4aba57111ba7045aa, type: 2}
   - {fileID: 11400000, guid: 6e1b02957c7e15345bec184dc55f8fd3, type: 2}
-  notBoughtItems: []
+  notBoughtItems:
+  - {fileID: 11400000, guid: 7ad7744f00472e1458ff8cb28a50bc48, type: 2}
+  - {fileID: 11400000, guid: 550a826421b3267418cdd463ec968729, type: 2}
+  - {fileID: 11400000, guid: c93b9fd477d745843b838fd6eb529cf6, type: 2}
+  - {fileID: 11400000, guid: c6db4bcc7edba3840a58586c378ed13c, type: 2}
+  - {fileID: 11400000, guid: 483783de2da547047977be3e85b73efd, type: 2}
+  - {fileID: 11400000, guid: 1ae2cc8dfe8732b4cb242eb15f6dab52, type: 2}
   boughtItems:
   - {fileID: 11400000, guid: 07a1909badbdb9945a13f614f8184c57, type: 2}
   - {fileID: 11400000, guid: 6c0f8a4e51509f7428a0a6dc5026b7bd, type: 2}
@@ -163,12 +169,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 85f5158f2a6ed0c47a0c287a705f219d, type: 2}
   - {fileID: 11400000, guid: b87a2046ea7b692478abcd7e323239fe, type: 2}
   - {fileID: 11400000, guid: 6611e11700af7fb4493c48a69643c5aa, type: 2}
-  - {fileID: 11400000, guid: 7ad7744f00472e1458ff8cb28a50bc48, type: 2}
-  - {fileID: 11400000, guid: 550a826421b3267418cdd463ec968729, type: 2}
-  - {fileID: 11400000, guid: c93b9fd477d745843b838fd6eb529cf6, type: 2}
-  - {fileID: 11400000, guid: c6db4bcc7edba3840a58586c378ed13c, type: 2}
-  - {fileID: 11400000, guid: 483783de2da547047977be3e85b73efd, type: 2}
-  - {fileID: 11400000, guid: 1ae2cc8dfe8732b4cb242eb15f6dab52, type: 2}
   equipedItems: []
   notEquipedItems:
   - {fileID: 11400000, guid: 07a1909badbdb9945a13f614f8184c57, type: 2}
@@ -183,6 +183,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c6db4bcc7edba3840a58586c378ed13c, type: 2}
   - {fileID: 11400000, guid: 483783de2da547047977be3e85b73efd, type: 2}
   - {fileID: 11400000, guid: 1ae2cc8dfe8732b4cb242eb15f6dab52, type: 2}
+  Coins: 100
   nameFile: {fileID: 4900000, guid: bc16d2c3f37ee254eb4d7730fc292c1d, type: 3}
 --- !u!114 &1745971999
 MonoBehaviour:
