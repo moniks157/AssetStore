@@ -103,7 +103,6 @@ public class Emergency {
         StringBuilder stringBuilder = new StringBuilder();
         foreach(var enemy in enemies)
         {
-            stringBuilder.AppendLine("abc");
             stringBuilder.AppendLine(enemy.Name);
             stringBuilder.AppendLine(enemy.GetDescription());
         }

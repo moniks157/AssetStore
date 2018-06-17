@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Gameplay/Events", fileName = "Event")]
+[CreateAssetMenu(menuName = "Gameplay/Events/Event", fileName = "Event")]
 public class NativeEvent : ScriptableObject
 {
     private Action _event;

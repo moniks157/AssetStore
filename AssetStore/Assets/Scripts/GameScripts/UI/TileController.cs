@@ -78,8 +78,8 @@ public class TileController : MonoBehaviour, IPointerClickHandler, IPointerEnter
     public void SetData()
     {
         Image = GetComponent<Image>();
-        Image.sprite = tile.Image ?? NoneImage;
-        Name = tile.Name ?? "";
+        Image.sprite = tile == null ? NoneImage : tile.Image;
+        Name = tile == null ? "" : tile.Name;
         Description = tile.Description ?? "";
     }
 

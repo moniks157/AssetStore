@@ -24,6 +24,12 @@ public static class Showdown  {
                 enemies.Enqueue(enemy);
         }
 
+        foreach(var v in characters)
+        {
+            if (v.actualHpPoints > 0)
+                v.actualHpPoints = v.hpPoints;
+        }
+
         if (enemies.Count == 0)
             return true;
         return false;
