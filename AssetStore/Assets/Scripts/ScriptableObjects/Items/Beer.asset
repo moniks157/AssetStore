@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 805e8ab778359ee4eb4fcb8fcc70d8c0, type: 3}
   m_Name: Beer
   m_EditorClassIdentifier: 
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 2dbb17e00c3786b49b4d8e1964cb3672, type: 3}
   Name: 
   Description: 
   modifierListPart1: []

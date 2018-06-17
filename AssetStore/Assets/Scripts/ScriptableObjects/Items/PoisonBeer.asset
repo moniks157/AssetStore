@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 805e8ab778359ee4eb4fcb8fcc70d8c0, type: 3}
   m_Name: PoisonBeer
   m_EditorClassIdentifier: 
-  Image: {fileID: 0}
-  Name: 
-  Description: 
+  Image: {fileID: 21300000, guid: e430b86b630e70c44996c2d70a79abc1, type: 3}
+  Name: Poison beer
+  Description: Kind of beer your wife could give you
   modifierListPart1: []
   modifierListPart2: 

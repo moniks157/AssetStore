@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 805e8ab778359ee4eb4fcb8fcc70d8c0, type: 3}
   m_Name: Spoon
   m_EditorClassIdentifier: 
-  Image: {fileID: 0}
-  Name: 
+  Image: {fileID: 21300000, guid: 437928d5e1f079b468e93beb4239d868, type: 3}
+  Name: Spoon
   Description: 
   modifierListPart1: []
   modifierListPart2: 

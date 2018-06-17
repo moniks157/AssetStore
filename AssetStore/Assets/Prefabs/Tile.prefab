@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 222840335358353400}
   - component: {fileID: 114549111390211512}
   - component: {fileID: 114939704191885784}
-  - component: {fileID: 223323788587848850}
+  - component: {fileID: 223158687127036818}
   m_Layer: 8
   m_Name: TileDetails
   m_TagString: Untagged
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db8c9dbcfa9c664783e9fce8997dd11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tile: {fileID: 11400000, guid: 7ad7744f00472e1458ff8cb28a50bc48, type: 2}
+  tile: {fileID: 11400000, guid: d6b085d79e6a81943908c6d164058705, type: 2}
   Image: {fileID: 0}
   Name: 
   Description: 
@@ -307,7 +307,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1897930652212344}
---- !u!223 &223323788587848850
+--- !u!223 &223158687127036818
 Canvas:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -325,7 +325,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!224 &224190273118904102
 RectTransform:
@@ -392,16 +392,16 @@ RectTransform:
   m_GameObject: {fileID: 1757035227474682}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 2.9999995, y: 2.9999995, z: 2.9999995}
   m_Children:
   - {fileID: 224764924268155186}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 60, y: -200}
-  m_SizeDelta: {x: 30, y: 30}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!224 &224830218922314670
 RectTransform:
