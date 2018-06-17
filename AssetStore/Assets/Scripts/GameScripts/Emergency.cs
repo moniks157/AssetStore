@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 
 public class Emergency {
 
+    private List<Skill> skills;
     public List<Skill> skillsList;
 
     public List<Character> enemies;
@@ -12,9 +14,12 @@ public class Emergency {
 
     public Emergency(int countOfEnemies, int sumOfElementPoint,List<Skill> skillList)
     {
+        skills = new List<Skill>(skillList);
+        enemies = new List<Character>();
         money = sumOfElementPoint * 5;
         skillsList = skillList;
         GenerateRandomEnemies(countOfEnemies, sumOfElementPoint, 50);
+        skillsList = skills;
     }
 
     private void GenerateRandomEnemies(int count, int sumPoints,int hpPoints)
@@ -25,6 +30,7 @@ public class Emergency {
             var rand = Random.Range(0, actualSumPoint);
             actualSumPoint -= rand;
             enemies.Add(GenerateCharacter(rand, hpPoints));
+            ClearList();
         }
     }
 
@@ -37,7 +43,7 @@ public class Emergency {
         var enemy = new Character()
         {
             actualHpPoints = hpPoints,
-            name = "placeHolder",
+            Name = "placeHolder",
             skillsPart1 = skilL1,
             skillsPart2 = skilL2
         };
@@ -64,7 +70,7 @@ public class Emergency {
     {
         var result = new List<Skill>();
 
-        for(int i = 0; i < Random.Range(1, 3); i++)
+        for(int i = 0; i < Random.Range(1, 5); i++)
         {
             result.Add(GetRandom(list));
         }
@@ -76,6 +82,23 @@ public class Emergency {
         var skill = list[Random.Range(0, list.Count - 1)];
         list.Remove(skill);
         return skill;
+    }
+
+    public override string ToString()
+    {
+        StringBuilder stringBuilder = new StringBuilder();
+        foreach(var enemy in enemies)
+        {
+            stringBuilder.AppendLine("abc");
+            stringBuilder.AppendLine(enemy.Name);
+            stringBuilder.AppendLine(enemy.GetDescription());
+        }
+        return stringBuilder.ToString();
+    }
+
+    private void ClearList()
+    {
+        skillsList = new List<Skill>(skills);
     }
 	
 }
