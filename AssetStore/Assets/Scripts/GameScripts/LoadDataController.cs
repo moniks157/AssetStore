@@ -36,10 +36,17 @@ public class LoadDataController : MonoBehaviour {
     public void LoadItems()
     {
         RemoveItems();
+        RemoveHeros();
 
         var Items = data.notEquipedItems;
         var Heros = data.boughtCharacters;
 
+        foreach(var h in Heros)
+        {
+            var hero = Instantiate(tilePrefab, HerosPanel.transform);
+            hero.GetComponentInChildren<TileController>().tile = h;
+            //hero.GetComponent<TileController>().SetData();
+        }
         
         foreach (var h in Items)
         {

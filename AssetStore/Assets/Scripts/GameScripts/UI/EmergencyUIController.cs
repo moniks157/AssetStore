@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts.Events.Scripts;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,13 @@ public class EmergencyUIController : MonoBehaviour {
     public Text EmergencyText;
     public GameObject panel;
     public GameObject TilePrefab;
+    public Image timer;
+    public float timeToSend;
+    public GameObject ResultPanel;
+    public Text ResultDescription;
+
+    [SerializeField]
+    private NativeEvent endEmergensiEvent;
 
     [SerializeField]
     private EmergencyEvent EmergencyEvent;
@@ -22,10 +30,13 @@ public class EmergencyUIController : MonoBehaviour {
 
     private Emergency emergency;
     private bool isEmergencyActive = false;
+    private float emergencyTimeStart;
+    private float timerTimeLeft;
+    private DataContainer dataContainer;
 
     private void Start()
     {
-        
+        dataContainer = FindObjectOfType<DataContainer>();
     }
 
     void OnEnable()
@@ -45,10 +56,32 @@ public class EmergencyUIController : MonoBehaviour {
     {
         isEmergencyActive = true;
         this.emergency = emergency;
-        Debug.Log(emergency.ToString());
         //Włączenie/ wyłączenie panelu
         panel.SetActive(true);
         EmergencyText.text = emergency.ToString();
+        emergencyTimeStart = Time.timeSinceLevelLoad;
+        timerTimeLeft = timeToSend;
+    }
+
+    private void Update()
+    {
+        if (isEmergencyActive)
+        {
+            if (Time.timeSinceLevelLoad > emergencyTimeStart + timeToSend)
+            {
+                SendHeroes();
+                timer.fillAmount = 0;
+            }
+            else
+            {
+                timer.fillAmount = ((timerTimeLeft ) / timeToSend);
+            }
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        timerTimeLeft -= Time.deltaTime;
     }
 
     public void SendHeroes()
@@ -56,8 +89,29 @@ public class EmergencyUIController : MonoBehaviour {
         if (characterList.Count != 0)
         {
             var showdownResult = Showdown.Battle(characterList, emergency.enemies);
-            Debug.Log(showdownResult);
             isEmergencyActive = false;
+            panel.SetActive(false);
+            foreach(var h in characterList)
+            {
+                if(h.actualHpPoints <= 0)
+                {
+                    dataContainer.boughtCharacters.Remove(h);
+                    dataContainer.deadHeroes.Add(h);
+                }
+            }
+
+            if (showdownResult)
+            {
+                dataContainer.money += emergency.money;
+            }
+            else
+            {
+                dataContainer.money -= emergency.money;
+            }
+
+            ResultDescription.text = GetResult(characterList, emergency.enemies, showdownResult);
+            ResultPanel.SetActive(true);
+            endEmergensiEvent.Invoke();
         }
     }
 
@@ -95,5 +149,46 @@ public class EmergencyUIController : MonoBehaviour {
                 characterList.Remove(character);
             }
         }
+    }
+
+    private string GetResult(List<Character> heroes, List<Character> enemies, bool result)
+    {
+        StringBuilder builder = new StringBuilder();
+
+        if (result)
+        {
+            builder.AppendLine("Victory!");
+        }
+        else
+        {
+            builder.AppendLine("Defet!");
+        }
+
+        builder.AppendLine("enemies defeted:");
+        foreach(var h in enemies)
+        {
+            if(h.actualHpPoints <= 0)
+            {
+                builder.AppendLine(h.Name);
+            }
+        }
+
+        builder.AppendLine("dead heroes");
+        foreach (var h in heroes)
+        {
+            if (h.actualHpPoints <= 0)
+            {
+                builder.AppendLine(h.Name);
+            }
+        }
+        gameObject.SendMessage("LoadItems");
+
+        characterList.Clear();
+        foreach (var g in characterTileList)
+        {
+            Destroy(g);
+        }
+        return builder.ToString();
+        
     }
 }

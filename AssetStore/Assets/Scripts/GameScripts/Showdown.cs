@@ -17,10 +17,10 @@ public static class Showdown  {
             Attack(character, enemy);
             Attack(enemy, character);
 
-            if (character.hpPoints > 0)
+            if (character.actualHpPoints > 0)
                 characters.Enqueue(character);
 
-            if (enemy.hpPoints > 0)
+            if (enemy.actualHpPoints > 0)
                 enemies.Enqueue(enemy);
         }
 
@@ -39,11 +39,11 @@ public static class Showdown  {
     {
         if (defender.PrimarySkill.weekFor == attacker.PrimarySkill)
         {
-            defender.hpPoints -= (int)(attacker.SkillValueSum * 1.5);
+            defender.actualHpPoints -= (int)(attacker.SkillValueSum * 1.5);
         }
         else
         {
-            defender.hpPoints -= attacker.SkillValueSum;
+            defender.actualHpPoints -= attacker.SkillValueSum;
         }
     }
 
