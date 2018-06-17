@@ -32,7 +32,7 @@ public class Character : TileObject
     public int actualHpPoints;
 
     private int ItemsMaxCount;
-    private List<Item> Items;
+    public List<Item> Items;
 
     public bool HasEquiped(Item item)
     {

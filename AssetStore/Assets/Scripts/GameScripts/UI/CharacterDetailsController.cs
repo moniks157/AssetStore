@@ -3,26 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CharacterDetailsControllerr : MonoBehaviour {
+public class CharacterDetailsController : MonoBehaviour {
 
-    CharacterEvent ShowCharacter;
-    
-    //Odpowiednie texty i inne rzeczy
+    public CharacterEvent ShowCharacter;
 
-    private void Awake()
+    public Image tile;
+    public Text NameText;
+    public Text DescText;
+
+    private void OnEnable()
     {
-        ShowCharacter.AddListener(ShowPanel);
+        ShowCharacter.AddListener(FillData);
     }
 
     private void OnDisable()
     {
-        ShowCharacter.RemoveListener(ShowPanel);
+        ShowCharacter.RemoveListener(FillData);
     }
+    
 
     //Wypełnienie danymi bohatera
-    public void ShowPanel(Character character)
+    public void FillData(Character character)
     {
-        //Włączenie/ wyłączenie panelu
-        gameObject.SetActive(!gameObject.activeSelf);
+        tile.sprite = character.Image;
+        NameText.text = character.Name;
+        DescText.text = character.GetDescription();
     }
 }

@@ -8,7 +8,7 @@ public class ErrorController : MonoBehaviour {
     StringEvent ShowError;
     public Text ErrorText;
 
-    private void Awake()
+    private void OnEnable()
     {
         ShowError.AddListener(ShowPanel);
     }

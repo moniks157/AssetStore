@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 757b3ece829881a45ba1728051148b51, type: 3}
+  m_Name: ITGuy
+  m_EditorClassIdentifier: 
+  Image: {fileID: 21300000, guid: 107cef0794cb86f4aa1d992df8f377a3, type: 3}
+  Name: ItGuy
+  Description: Always want to reapair bugs
+  skillsPart1: []
+  skillsPart2: 
+  hpPoints: 50
+  actualHpPoints: 50
+  Items:
+  - {fileID: 11400000, guid: b4a0ce7fd9d5123478f2c0c3621aaf9b, type: 2}
