@@ -305,20 +305,10 @@
     <Compile Include="Assets\Scripts\Events\Scripts\ItemCharacterEvent.cs" />
     <Compile Include="Assets\Scripts\Events\Scripts\ItemEvent.cs" />
     <Compile Include="Assets\Scripts\Events\Scripts\NativeEvent.cs" />
-<<<<<<< HEAD
+    <Compile Include="Assets\Scripts\Events\Scripts\StringEvent.cs" />
     <Compile Include="Assets\Scripts\Events\Scripts\TileEvent.cs" />
     <Compile Include="Assets\Scripts\GameScripts\Emergency.cs" />
     <Compile Include="Assets\Scripts\GameScripts\EmergencyController.cs" />
-    <Compile Include="Assets\Scripts\GameScripts\Equipment.cs" />
-    <Compile Include="Assets\Scripts\GameScripts\Showdown.cs" />
-    <Compile Include="Assets\Scripts\GameScripts\UI\CharacterDetailsController.cs" />
-    <Compile Include="Assets\Scripts\GameScripts\UI\ItemsUIController.cs" />
-    <Compile Include="Assets\Scripts\GameScripts\UI\TileController.cs" />
-    <Compile Include="Assets\Scripts\GameScripts\UI\TileDetailsController.cs" />
-    <Compile Include="Assets\Scripts\ScriptableObjects\Character.cs" />
-=======
-    <Compile Include="Assets\Scripts\Events\Scripts\StringEvent.cs" />
-    <Compile Include="Assets\Scripts\Events\Scripts\TileEvent.cs" />
     <Compile Include="Assets\Scripts\GameScripts\Equipment.cs" />
     <Compile Include="Assets\Scripts\GameScripts\Showdown.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\CharacterDetailsController.cs" />
@@ -326,7 +316,6 @@
     <Compile Include="Assets\Scripts\GameScripts\UI\TileController.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UI\TileDetailsController.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Characters\Character.cs" />
->>>>>>> Milena5
     <Compile Include="Assets\Scripts\ScriptableObjects\CurrentCharacter.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Items\Item.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Skills\Skill.cs" />
@@ -334,7 +323,7 @@
     <Compile Include="Assets\Scripts\Utility\Tuple.cs" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
+    <None Include="Assets\Files\imiona.txt" />
     <None Include="C:\Users\millu\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />
     <None Include="C:\Users\millu\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Light.uss" />
     <None Include="C:\Users\millu\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\Alert.uxml" />
@@ -344,18 +333,6 @@
     <None Include="C:\Users\millu\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageList.uxml" />
     <None Include="C:\Users\millu\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageManagerWindow.uxml" />
     <None Include="C:\Users\millu\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageSearchFilterTabs.uxml" />
-=======
-    <None Include="Assets\Files\imiona.txt" />
-    <None Include="C:\Users\Michał\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />
-    <None Include="C:\Users\Michał\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Light.uss" />
-    <None Include="C:\Users\Michał\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\Alert.uxml" />
-    <None Include="C:\Users\Michał\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageDetails.uxml" />
-    <None Include="C:\Users\Michał\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageGroup.uxml" />
-    <None Include="C:\Users\Michał\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageItem.uxml" />
-    <None Include="C:\Users\Michał\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageList.uxml" />
-    <None Include="C:\Users\Michał\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageManagerWindow.uxml" />
-    <None Include="C:\Users\Michał\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageSearchFilterTabs.uxml" />
->>>>>>> Michal6
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
